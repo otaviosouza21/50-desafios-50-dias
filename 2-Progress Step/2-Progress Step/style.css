@@ -1,0 +1,85 @@
+div,body{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f1f1f1;
+}
+
+.progress{
+    display: flex;
+    gap: 50px;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.step,.step-1{
+  border: solid 3px #e1e1e1;
+  border-radius: 50%;
+padding: 5px;
+width: 20px;
+height: 20px;
+display: flex;
+justify-content: center;
+align-items: center;
+color: #a1a1a1;
+font-weight: bold;
+background-color:#f1f1f1; 
+z-index: 100;
+
+}
+.step-1{border-color:rgb(77, 148, 240);}
+
+
+.step.ativo{
+    border-color:rgb(77, 148, 240);
+    transition: 1s;
+
+}
+
+.line{
+    display: inline-block;
+    position: absolute;
+    width: 0px;
+    height: 4px;
+    background-color: rgb(77, 148, 240);
+    align-self: center;
+    z-index: 2;
+}
+
+.line.ativo{
+    transition: 1s;
+}
+
+
+
+.back-line{
+    display: inline-block;
+    position: absolute;
+    width: 290px;
+    height: 4px;
+    background-color: #e1e1e1;
+    align-self: center;
+}
+
+
+
+button{
+    border: none;
+    background-color: rgb(77, 148, 240);
+    color:white ;
+    padding: 8px 25px;
+    margin-top: 20px;
+    border-radius: 5px;
+    margin-left: 10px;
+    cursor: pointer;
+}

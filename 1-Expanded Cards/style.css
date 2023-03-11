@@ -1,0 +1,64 @@
+body,h2{
+  padding: 0;
+  margin: 0;
+}
+
+img{
+  max-width: 100%;
+}
+
+body{
+  padding: 50px;
+}
+
+
+.container{
+  display: flex;
+  width: 90vw;
+  margin: 0 5px;
+  gap: 10px;
+}
+
+
+
+.galeria{
+  background-size: cover;
+  display: flex;
+  background-position: center;
+  height: 80vh;
+  width: 90vw;
+  border-radius: 100px;
+  flex: 0.5;
+  transition: 0.5s ease-in-out;
+  justify-content: center;
+  align-items: end;
+  position: relative;
+  font-family: sans-serif;
+  color: aliceblue;
+  font-weight: bold;
+  padding: 10px;
+  font-size: 1.1rem;
+}
+
+.img-1{
+  background:  url('./img/img-1.jpg') no-repeat;
+}
+.img-2{
+  background:  url('./img/img-2.jpg') no-repeat;
+}
+.img-3{
+  background:  url('./img/img-3.jpg') no-repeat
+}
+.img-4{
+  background:  url('./img/img-4.jpg') no-repeat;
+}
+.img-5{
+  background:  url('./img/img-5.jpg') no-repeat;
+}
+
+.galeria.ativo{
+  flex: 5;
+  transition: 1s ease-in-out;
+}
+
+

@@ -1,0 +1,63 @@
+body,h1,h2,p{
+margin: 0;
+padding: 0;
+font-family: sans-serif;
+
+}
+img{
+  display: block;
+  max-width: 100%;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.principal{
+  max-width: 1100px;
+  margin: 100px auto;
+  height: 100vh;
+  width: 100vw;
+  background: #fafafa;
+}
+
+.principal h1{
+color: rgb(27, 27, 27) ;
+margin-bottom: 5px;
+}
+
+.principal span{
+color: rgb(179, 176, 176);
+margin-bottom: 50px;
+}
+
+.principal p {
+  margin-top: 25px;
+  font-size: 1.1rem;
+  color: #616161;
+  margin-bottom: 30px;
+}
+
+
+.roda{
+  display: flex;
+  position: relative;
+  width: 200px;
+  height: 200px;
+   top: -80px;
+  left: -90px;  
+  border-radius: 50%;
+  background-color:rgb(207, 92, 92);
+  align-items: center;
+  justify-content: center;
+ gap: 40px;
+ transform: rotate(0deg);
+}
+
+.roda.ativo{
+  transform: rotate(-90deg);
+  transition: 0.5s;
+}
+.roda img{
+width: 30px;
+margin-top:100px;
+}
+
