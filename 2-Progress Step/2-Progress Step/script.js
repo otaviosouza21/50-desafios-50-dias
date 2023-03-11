@@ -1,62 +1,45 @@
 const prev = document.querySelector('button:first-child');
 const next = document.querySelector('button:last-child');
 const steps = document.querySelectorAll('.step');
-const progress = document.querySelector('.line')
-
+const progress = document.querySelector('.line');
 
 let barra = 0;
-let contador= 1;
+let contador = 1;
 const tamanho = {
-    0:180,
-    1:280,
-    2:370
-}
+  0: 180,
+  1: 280,
+  2: 370,
+};
 
-next.addEventListener('click',()=>{
+next.addEventListener('click', () => {
+  if (barra < 270) {
     barra += 90;
-    contador++
-update();
-})
+    contador++;
+  }
+  update();
+});
 
-
-prev.addEventListener('click',()=>{
+prev.addEventListener('click', () => {
+  if (barra > 0) {
     barra -= 90;
     contador--;
-    update() 
-})
+  }
 
+  update();
+});
 
-
-
-function update(){
-
-steps.forEach((step,index)=>{
-
-    if(index < contador){
-        step.classList.add('ativo');
-
+function update() {
+  steps.forEach((step, index) => {
+    if (index < contador) {
+      step.classList.add('ativo');
     } else {
-          step.classList.remove('ativo');
+      step.classList.remove('ativo');
     }
-})
+  });
 
-progress.style.width = barra+'px'
-progress.classList.add('ativo')
-
+  progress.style.width = barra + 'px';
+  progress.classList.add('ativo');
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* next.addEventListener('click',()=>{
 progress.style.width = barra+'px';

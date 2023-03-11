@@ -9,11 +9,14 @@ imagens.forEach((item,index)=>{
  imagens.forEach((i)=>{
   i.classList.remove("ativo")
   i.innerHTML = "";
+
  })
 
-
-item.innerHTML = titulo[index].innerText
+setTimeout(()=>{
+  item.innerHTML = titulo[index].innerText;
+},1000)
 item.classList.add("ativo")
 
 })
+
 })
