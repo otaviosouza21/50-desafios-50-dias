@@ -1,9 +1,22 @@
-body,h1,h2,p{
+body,h1,h2,p,ul,li{
 margin: 0;
 padding: 0;
 font-family: sans-serif;
-
+list-style: none;
 }
+
+html{
+  background-color: rgb(40, 39, 39);
+}
+
+body{
+  background: #fafafa;
+  position: relative;
+  overflow-x: hidden;
+}
+
+
+
 img{
   display: block;
   max-width: 100%;
@@ -11,12 +24,34 @@ img{
   margin-bottom: 25px;
 }
 
-.principal{
-  max-width: 1100px;
-  margin: 100px auto;
-  height: 100vh;
-  width: 100vw;
+a{
+  text-decoration: none;
+}
+
+.container{
   background: #fafafa;
+  transform-origin: left top;
+  position: absolute;
+margin: 0 auto;
+width: 100%;
+  z-index: 99;
+  transition: 0.5s ease-out;
+  padding: 20px;
+
+}
+
+.container.ativo{
+  transition: 0.5s;
+transform: rotate(-20deg);
+}
+
+
+
+
+.principal{
+  max-width: 1200px;
+  margin: 150px auto;
+  
 }
 
 .principal h1{
@@ -39,25 +74,96 @@ margin-bottom: 50px;
 
 .roda{
   display: flex;
-  position: relative;
+  position: absolute;
   width: 200px;
   height: 200px;
    top: -80px;
-  left: -90px;  
+  left: -100px;  
   border-radius: 50%;
   background-color:rgb(207, 92, 92);
   align-items: center;
   justify-content: center;
  gap: 40px;
- transform: rotate(0deg);
+ z-index: 100;
+ transition: 0.5s;
 }
 
 .roda.ativo{
-  transform: rotate(-90deg);
   transition: 0.5s;
+transform: rotate(-90deg);
 }
 .roda img{
 width: 30px;
 margin-top:100px;
 }
 
+.menu-container{
+display: flex;
+position: absolute;
+width: 200px;
+height: 100vh;
+align-items: end;
+margin-top: 10px;
+z-index: 0;
+
+}
+.menu-hover{
+display: flex;
+flex-direction: column;
+align-content: start;
+gap: 10px;
+padding: 30px 40px ;
+margin-bottom: 10px;
+}
+
+
+
+.menu-hover li a{
+color: #c9c9c9;
+text-transform: uppercase;
+font-weight: bold;
+align-self: center;
+font-size: 1.1rem;
+margin-top: 1px;
+}
+
+.menu-hover li{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: 1s;
+}
+
+.menu-hover li:nth-child(1).ativo{
+  animation: rigth 0.5s forwards;
+  }
+
+.menu-hover li:nth-child(2).ativo{
+padding-left: 20px;
+animation: rigth 0.4s forwards;
+}
+
+.menu-hover li:nth-child(3).ativo{
+  padding-left: 55px;
+  animation: rigth 0.3s forwards ease-in;
+  }
+
+@keyframes rigth {
+  0%{
+    transform: translate3d(-200px,0,0);
+  }
+  90%{
+    transform: translate3d(-200px,0,0);
+  }
+
+  100%{
+    transform: translate3d(0,0,0);
+  }
+}
+
+
+
+.menu-hover li img{
+  width: 25px;
+  align-self: center;
+}
