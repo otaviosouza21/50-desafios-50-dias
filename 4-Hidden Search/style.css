@@ -1,0 +1,58 @@
+body{
+margin: 0;
+padding: 0;
+background: rgb(94, 94, 190);
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+}
+
+main{
+  display: flex;
+}
+
+label{
+  background-color: white;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+input{
+  border: none;
+  outline: none;
+  font-size: 1.1rem;
+  padding: 10px;
+  font-weight: bold;
+ width: 0px;
+opacity: 0;
+}
+
+input.ativo{
+  width: 200px;
+opacity: 1;
+  transition: 0.5s;
+}
+
+
+@keyframes rigth{
+  100%{
+ 
+  }
+}
+
+
+input::placeholder{
+  font-weight: 100;
+}
+
+
+img{
+  max-width: 80%;
+}
+
+

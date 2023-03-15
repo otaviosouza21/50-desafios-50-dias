@@ -1,0 +1,29 @@
+body{
+  margin: 0;
+  background: url('./img/tech.jpg') no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  backdrop-filter: blur(10px);
+  transition: 10s;
+}
+
+body.ativo{
+  backdrop-filter: blur(0px);
+}
+
+h1{
+color: rgb(0, 0, 0);
+font-family: sans-serif;
+font-size: 3rem;
+opacity: 1;
+transition: 15s;
+}
+
+h1.ativo{
+  opacity: 0;
+}
+
