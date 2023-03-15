@@ -6,11 +6,12 @@ Neste repositório, eu realizo os 50 desafios para o desenvolvimento de sites, e
 
 | Título do exercício | Link para o repositório | Link para o site ao vivo | Tecnologias utilizadas | Concluído? |
 | --- | --- | --- | --- | --- |
-| Desafio 1: Cards Exopansivos | [Repositório](https://github.com/otaviosouza21/50-desafios-50-dias/tree/master/1-Expanded%20Cards) | [Site](https://otaviosouza21.github.io/50-desafios-50-dias/1-Expanded%20Cards/) | HTML, CSS, Javascript | Sim |
-| Desafio 2: Criar um slider de imagens | [Repositório](https://github.com/seuusuario/desafio2) | [Site](https://seuusuario.github.io/desafio2) | HTML, CSS, JavaScript | Sim |
-| Desafio 3: Criar um menu responsivo | [Repositório](https://github.com/seuusuario/desafio3) | [Site](https://seuusuario.github.io/desafio3) | HTML, CSS, JavaScript | Sim |
-| Desafio 4: Criar uma animação com CSS | [Repositório](https://github.com/seuusuario/desafio4) | [Site](https://seuusuario.github.io/desafio4) | HTML, CSS | Sim |
-| Desafio 5: Criar um formulário de contato | [Repositório](https://github.com/seuusuario/desafio5) | [Site](https://seuusuario.github.io/desafio5) | HTML, CSS, PHP | Sim |
+| Desafio 1: Cards Expansivos | [Repositório](https://github.com/otaviosouza21/50-desafios-50-dias/tree/master/1-Expanded%20Cards) | [Site](https://otaviosouza21.github.io/50-desafios-50-dias/1-Expanded%20Cards/) | HTML, CSS, Javascript | Sim |
+| Desafio 2: Barra de progresso | [Repositório](https://github.com/otaviosouza21/50-desafios-50-dias/tree/master/2-Progress%20Step/2-Progress%20Step) | [Site](https://otaviosouza21.github.io/50-desafios-50-dias/2-Progress%20Step/2-Progress%20Step/) | HTML, CSS, JavaScript | Sim |
+| Desafio 3: Navegação Rotativa | [Repositório](https://github.com/otaviosouza21/50-desafios-50-dias/tree/master/3-Rotating%20nav) | [Site](https://otaviosouza21.github.io/50-desafios-50-dias/3-Rotating%20nav/) | HTML, CSS, JavaScript | Sim |
+| Desafio 4: Pesquisa Escondida | [Repositório](https://github.com/otaviosouza21/50-desafios-50-dias/tree/master/4-Hidden%20Search) | [Site](https://otaviosouza21.github.io/50-desafios-50-dias/4-Hidden%20Search/) | HTML, CSS,Javascript | Sim |
+| Desafio 5: Blurry Loanding | [Repositório](https://github.com/otaviosouza21/50-desafios-50-dias/tree/master/5-Blurry%20Loanding) | [Site](https://otaviosouza21.github.io/50-desafios-50-dias/5-Blurry%20Loanding/) | HTML, CSS, Javascript | Sim |
+| Desafio 6: Scroll Animado | [Repositório](https://github.com/otaviosouza21/50-desafios-50-dias/tree/master/6-%20Scroll%20Animation) | [Site](https://otaviosouza21.github.io/50-desafios-50-dias/6-%20Scroll%20Animation/) | HTML, CSS, Javascript | Sim |
 | ... | ... | ... | ... | ... |
 
-Fique à vontade para atualizar a coluna "Concluído?" de acordo com o seu progresso. Espero que isso ajude!
+Fique à vontade para explorar os desafios que já foram concluídos e os que ainda estão em andamento. Se você gostou de algum dos projetos, não hesite em entrar em contato comigo!
