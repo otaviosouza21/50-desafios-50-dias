@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+body,h1,p,label{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Muli', sans-serif;
+  color: white;
+}
+
+body{
+  background: rgb(69, 118, 184);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 20px;
+}
+
+.login{
+  background-color:rgba(42, 55, 83, 0.459) ;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 40px 30px 30px 30px;
+  border-radius: 5px;
+  width:350px;
+}
+
+.login h1{
+  font-size: 2.5rem; 
+  text-align: center;
+ }
+
+.login-input{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.login-input label{
+  font-size: 1.2rem;
+  position: relative;
+  top:20px;
+  font-weight: 100;
+  display: inline;
+  align-self: flex-start;
+}
+
+
+
+@keyframes wave{
+  from{
+    transform: translate3d(0,0,0);
+  }
+  to{
+    transform: translate3d(0,-20px,0);
+  }
+}
+
+
+
+.login-input input{
+  background-color: transparent;
+  outline: none;
+  border: none;
+  border-bottom: solid 2px white;
+  padding: 5px 0;
+  color: white;
+  font-size: 1rem;
+}
+
+.login-input label span.ativo{
+  display: inline-block;
+animation: wave .3s forwards;
+animation-direction: alternate;
+}
+
+.login span {
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.btn{
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(171, 213, 230);
+  height: 50px;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+.btn:hover{
+  background-color: rgb(108, 168, 192);
+  transition: .3s;
+}
+
+span.ativo{
+  position: block;
+animation: up 1s linear;
+}
+
+@keyframes up{
+  to{
+    transform: translate3d(-40px,200px,0);
+  }
+}
+
+
+@media (max-width:400px){
+  .login h1{
+    font-size: 2rem; 
+   
+   }
+}
