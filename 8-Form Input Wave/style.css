@@ -41,7 +41,7 @@ body{
 .login-input label{
   font-size: 1.2rem;
   position: relative;
-  top:20px;
+  top:10px;
   font-weight: 100;
   display: inline;
   align-self: flex-start;
@@ -96,16 +96,7 @@ animation-direction: alternate;
   transition: .3s;
 }
 
-span.ativo{
-  position: block;
-animation: up 1s linear;
-}
 
-@keyframes up{
-  to{
-    transform: translate3d(-40px,200px,0);
-  }
-}
 
 
 @media (max-width:400px){

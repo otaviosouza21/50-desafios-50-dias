@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+body,h1,dl,dd,dt{
+    margin: 0;
+    padding: 0;
+    font-family: 'Muli', sans-serif;
+}
+
+body{
+    background: #f0eeee;
+    padding: 20px;
+}
+
+img{
+    width: 30px;
+    cursor: pointer;
+    align-self: flex-start;
+}
+
+.container{
+    max-width: 700px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: 0px auto 50px auto;
+   
+}
+
+.container h1{
+    margin: 20px 0;
+    text-align: center;
+}
+
+.faq{
+    border: solid rgba(0, 0, 0, 0.212) 1px;
+    padding: 30px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.faq.ativo{
+    background-color: white;
+}
+
+.faq-pergunta{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.faq img:nth-child(3){
+display: none;
+}
+
+.faq img:nth-child(3).ativo{
+    display: block;
+    }
+    
+
+
+.faq img:nth-child(2){
+   transform: rotate(-90deg);
+}
+
+.faq img:nth-child(2).ativo{
+    display: none;
+ }
+ 
+
+.faq dt{
+    align-self: center;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.faq dd{
+   display: none;
+}
+
+.faq dd.ativo{
+    display: block;
+}

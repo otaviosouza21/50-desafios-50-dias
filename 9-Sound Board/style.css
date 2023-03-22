@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+body,ul,li{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-family: 'Muli', sans-serif;
+}
+
+body{
+  background-color:#A164DF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+
+.board-lista{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.board-lista li{
+  color: white;
+  font-size: 1.5rem;
+  padding: 20px 60px;
+  border-radius: 5px;
+  background-color: #663399;
+  cursor: pointer;
+}
+
+.board-lista li:hover{
+  background: #6C38A0;
+}
