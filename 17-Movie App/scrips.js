@@ -1,18 +1,19 @@
 const URLjson =
   'https://api.themoviedb.org/3/discover/movie?sort_by=popularity.desc&api_key=3fd2be6f0c70a2a598f084ddfb75487c&page=1';
-  const URLsearch = 'https://api.themoviedb.org/3/search/movie?api_key=3fd2be6f0c70a2a598f084ddfb75487c&query="';
+  const URLsearch = 'https://api.themoviedb.org/3/search/movie?api_key=3fd2be6f0c70a2a598f084ddfb75487c&query=';
   const form = document.querySelector('form');
   const input = form[0];
-  const catalogo = document.querySelector(".filmes")
+  const catalogo = document.querySelector(".filmes");
 
-
+  
+ setFilmes(URLjson);
 
 
 class ContainerFilme { // classe que constroi o container de filme
   constructor(filmes) {
     this.img = filmes.img;
     this.titulo = filmes.titulo;
-    this.nota = filmes.nota;
+    this.nota = filmes.nota.toFixed(2);
     this.overview = filmes.overview;
   }
 
@@ -26,6 +27,7 @@ class ContainerFilme { // classe que constroi o container de filme
     containerImagem.classList.add('filme-imagem');
     const imgFilme = document.createElement('img');
     imgFilme.src = this.img;
+    imgFilme.alt = this.titulo;
 
     //criando descrição e nota
     const containerDescricao = document.createElement('div');
@@ -33,6 +35,13 @@ class ContainerFilme { // classe que constroi o container de filme
     const filmeTitulo = document.createElement('h1');
     filmeTitulo.innerText = this.titulo;
     const filmeNota = document.createElement('span');
+    if(this.nota<=5){
+      filmeNota.style.color = "red"
+    }else if(this.nota>5 && this.nota<8){
+      filmeNota.style.color = "gold"
+    } else{
+      filmeNota.style.color = "green"
+    }
     filmeNota.innerText = this.nota;
 
     //criando sinopse
@@ -63,9 +72,9 @@ class ContainerFilme { // classe que constroi o container de filme
 
 
 //faz a requisição da api e envia para a funcao criarFilmes()
-async function setFilmes() {
+async function setFilmes(url) {
   try{
-  const promiseFilmes = await fetch(URLjson);
+  const promiseFilmes = await fetch(url);
   const filmesJSON = await promiseFilmes.json()
   criaFilmes(filmesJSON.results);
   } 
@@ -74,17 +83,9 @@ async function setFilmes() {
   }
 }
 
-async function setRandom(url){
-  const promiseRandom = await fetch(url);
-  const searchJSON = await promiseRandom.json();
-
-
-}
-
-
-
 //percorre todos os filmes, armazena em filmesArray e coloca na tela
 const criaFilmes = function (jsonFilmes) {
+  catalogo.innerHTML = ""
   jsonFilmes.forEach((filmes, index) => {
     filmeArray = {
       titulo: filmes.original_title,
@@ -99,15 +100,16 @@ const criaFilmes = function (jsonFilmes) {
 };
 
 
-setFilmes();
-
 form.addEventListener(("submit"),(e)=>{
   e.preventDefault()
   const pesquisa = input.value
 
   if(pesquisa !==""){
-    setSearch(pesquisa)
-  } 
+    setFilmes(URLsearch+pesquisa)
+    input.value = ''
+  } else {
+    window.location.reload()
+  }
 
 })
 

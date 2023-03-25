@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap');
+
+body,h1,span{
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto Mono', sans-serif;
+  color: white;
+}
+
+
+img{
+  max-width: 60px;
+}
+
+body{
+  background: #8E44AD;
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  justify-content: center;
+}
+
+.container{
+  display: flex;
+  width: 1000px;
+  justify-content: space-around;
+}
+
+.rede{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.rede h1{
+  font-size: 4rem;
+  font-weight: 300;
+}
