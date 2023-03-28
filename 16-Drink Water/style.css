@@ -21,11 +21,12 @@ body{
 }
 
 .container{
-  max-width: 500px;
+  max-width: 800px;
   margin: 0 auto;
   display: flex;
   align-items: center;
-  flex-direction: column;
+  justify-content: space-around
+ 
 }
 
 .drink-ml{
@@ -57,13 +58,27 @@ body{
   max-width: 200px;
   margin: 0 auto;
   margin-bottom: 30px;
+  position: relative;
 }
 
+.drink-copo h2,
+.drink-copo span{
+  position: relative;
+  z-index: 5;
+}
+
+.drink-doses h4{
+  text-align: center;
+}
+
+.drink-doses{
+  align-self: center;
+}
 .doses{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
   gap: 20px;
+  margin-top: 20px;
 }
 
 
@@ -80,4 +95,25 @@ body{
   max-width: 50px;
   margin: 0 auto;
   margin-bottom: 30px; 
+  padding: 10px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.doses li.ativo{
+  background-color: aqua;
+}
+
+.bebidos{
+  position: relative;
+  z-index: 2;
+}
+
+.agua{
+  background:aqua;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  border-radius: 0px 0px 48px 48px;
+  transition: 1s;
 }
