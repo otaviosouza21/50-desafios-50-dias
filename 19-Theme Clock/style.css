@@ -1,0 +1,104 @@
+body,h1{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background: #111111;
+  color: white;
+  font-family: 'IBM Plex Mono';
+  display: flex;
+  align-items: center;
+  justify-content: center ;
+  transition: 1s;
+}
+
+body.temaClaro{ /*tema claro*/
+  background-color: white;
+  color: #111;
+  transition: 1s;
+}
+
+.clock{
+  max-width: 500px;
+  height: 100vh;
+  margin: 0 auto;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+ gap: 20px;
+}
+
+.clock button{
+  border: none;
+  color: rgb(65, 65, 65);
+  background-color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  font-family: 'IMB Plex Mono';
+}
+
+.clock button.temaClaro{ /*tema claro*/
+  background-color: #111111;
+  color: white;
+}
+
+
+.clock-ponteiros{
+  height: 250px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: solid 2px rgb(183, 180, 180);
+  width: 250px;
+  border-radius: 50%;
+}
+
+.clock-ponteiros.temaClaro{ /*tema claro*/
+border-color: #111;
+}
+
+#centro{
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+box-shadow: inset 0px 0px 0px 2px tomato;
+  background-color: white;
+}
+
+
+.minutos,.segundos,.horas{
+  display: block;
+  width: 3px;
+  height: 100px;
+  background-color: white;
+  position: absolute;
+  left: 49.5%;
+  bottom: 50%;
+  z-index: -100;
+  transform-origin: 100% 100%;
+}
+
+.minutos.temaClaro,.horas.temaClaro{/*tema claro*/
+background-color: #111;
+}
+
+.horas{
+  height: 80px;
+}
+
+.segundos{
+  display: block;
+  background-color: tomato;
+  transition: 1s;
+}
+
+
+.clock-digital h1{
+  font-size: 3rem;
+}
