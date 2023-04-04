@@ -21,8 +21,10 @@ Neste repositório, eu realizo os 50 desafios para o desenvolvimento de sites, e
 | Desafio 13: Random Choice | [Repositório](https://github.com/otaviosouza21/50-desafios-50-dias/tree/master/13-Random%20Choice) | [Site](https://otaviosouza21.github.io/50-desafios-50-dias/13-Random%20Choice) | HTML, CSS, Javascript | Sim |
 | Desafio 14: Animated Navigation | [Repositório](https://github.com/otaviosouza21/50-desafios-50-dias/tree/master/14-Animated%20Navigation) | [Site](https://otaviosouza21.github.io/50-desafios-50-dias/14-Animated%20Navigation) | HTML, CSS, Javascript | Sim |
 | Desafio 15: Incrementing Counter | [Repositório](https://github.com/otaviosouza21/50-desafios-50-dias/tree/master/15-Incrementing%20Counter) | [Site](https://otaviosouza21.github.io/50-desafios-50-dias/15-Incrementing%20Counter) | HTML, CSS, Javascript | Sim |
-| Desafio 16: Drink Water | [Repositório](https://github.com/otaviosouza21/50-desafios-50-dias/tree/master/16-Drink%20Water) | [Site](https://otaviosouza21.github.io/50-desafios-50-dias/16-Drink%20Water) | HTML, CSS, Javascript | Não |
-| Desafio 16: Movie App | [Repositório](https://github.com/otaviosouza21/50-desafios-50-dias/tree/master/17-Movie%20App) | [Site](https://otaviosouza21.github.io/50-desafios-50-dias/17-Movie%20App) | HTML, CSS, Javascript, API rest | Sim |
+| Desafio 16: Drink Water | [Repositório](https://github.com/otaviosouza21/50-desafios-50-dias/tree/master/16-Drink%20Water) | [Site](https://otaviosouza21.github.io/50-desafios-50-dias/16-Drink%20Water) | HTML, CSS, Javascript | Sim |
+| Desafio 17: Movie App | [Repositório](https://github.com/otaviosouza21/50-desafios-50-dias/tree/master/17-Movie%20App) | [Site](https://otaviosouza21.github.io/50-desafios-50-dias/17-Movie%20App) | HTML, CSS, Javascript, API rest | Sim |
+| Desafio 18: Background Slider | [Repositório](https://github.com/otaviosouza21/50-desafios-50-dias/tree/master/17-Background%20Slider) | [Site](https://otaviosouza21.github.io/50-desafios-50-dias/17-Background%20Slider) | HTML, CSS, Javascript | Sim |
 | ... | ... | ... | ... | ... |
 
 Fique à vontade para explorar os desafios que já foram concluídos e os que ainda estão em andamento. Se você gostou de algum dos projetos, não hesite em entrar em contato comigo!
+
