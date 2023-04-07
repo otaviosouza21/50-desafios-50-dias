@@ -1,0 +1,48 @@
+body{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background-color: #111;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+overflow: hidden;
+  z-index: 2;
+}
+
+button{
+  border: none;
+  background-color: rgb(107, 3, 107);
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 25px 40px;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+
+}
+
+.shadow{
+  display: block;
+  width: 100px;
+  height: 100px;
+  background-color: rgba(255, 255, 255, 0.663);
+  border-radius: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%) scale(0);
+  animation: scale 0.5s ease-out;
+}
+
+
+@keyframes scale {
+  100%{
+    transform: translate(-50%, -50%) scale(3);
+    opacity: 0;
+    display: none;
+  }
+}

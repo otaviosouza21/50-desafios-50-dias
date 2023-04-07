@@ -1,0 +1,46 @@
+body{
+  margin: 0;
+  padding: 0;
+}
+*{
+  box-sizing: border-box;
+}
+
+body{
+  background-color: #4682B4;
+  height: 100vh;
+}
+
+main{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  height: 100vh;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+
+.empity{
+  width: 200px;
+  height: 200px;
+  border: solid black 3px;
+}
+
+.bloco{
+  width: 195px;
+  height: 195px;
+  cursor: pointer;
+  background: linear-gradient(rgb(218, 125, 125),rgb(118, 118, 214));
+}
+
+
+.hover{
+  border: solid 5px rgb(94, 92, 92);
+}
+
+.hovered {
+  background-color: #3333335b;
+  border-color: rgb(236, 3, 3);
+  border-style: dashed;
+}
